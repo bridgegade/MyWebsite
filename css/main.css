@@ -1,0 +1,97 @@
+body {
+background-image: url("http://arunart.com/wp-content/uploads/2013/04/city-and-gray-texture-line-stripe-stripes-black-188359.jpg");
+background-repeat: repeat;
+text-align: center;
+
+}
+.alert{
+margin-top:100px; 
+margin-left:50px; 
+}
+
+
+#main{
+
+background: #E5E5E5;
+box-shadow: 0px 5px 10px#000000 ;
+padding: 50px;
+text-align: center;
+
+}
+#main p{
+  text-indent: 30px;
+  line-height: 2.0;  
+
+  
+}
+
+.pic img{ 
+  margin: 20;
+  box-shadow: 0px 10px 30px#000000 ;
+ position: relative;
+  width:700;
+  height: auto;
+ 
+}
+
+.nav{
+  height: 50px;
+  background: #D7D7D7;
+  box-shadow: 0px -5px 10px#808080 inset;
+
+}
+.nav a {
+
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('http://rmdeaftheatre.com/wp-content/uploads/2012/11/gray-background-3.jpg');
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 5px 10px#121212 ;
+}
+
+.jumbotron .container {
+  position: relative;
+  
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #000000;
+}
+.jumbotron a {
+  color: #4d4d4d;
+  text-shadow: 0px 0px 0px;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  top: 20px;
+  left:45px;
+}
+.jumbotron small{
+  color: #dbdbdb;
+}
+.jumbotron label{
+  color: #dbdbdb;
+
+}
+
