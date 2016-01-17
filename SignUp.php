@@ -1,10 +1,10 @@
 <?php
 session_start();
 require_once 'classes/Membership.php';
-$membership = new Membership();
+$Membership = new Membership();
 
 if($_POST ){
-  $response = $membership->add_User($_POST['firstname'],$_POST['lastname'],$_POST['email'],$_POST['username'],$_POST['pwd']);
+  $response = $Membership->add_User($_POST['firstname'],$_POST['lastname'],$_POST['email'],$_POST['username'],$_POST['pwd']);
 }
 
 ?>

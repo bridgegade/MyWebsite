@@ -99,6 +99,9 @@ class Mysql {
 	
 		
 	}
+	function attach_Image_To_Account(){
+		
+	}
 	
 }
 ?>

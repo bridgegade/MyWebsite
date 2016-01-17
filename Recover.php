@@ -1,16 +1,16 @@
 <?php
 session_start();
 require_once 'classes/Membership.php';
-$membership = new Membership();
+$Membership = new Membership();
 
 // If user clicks Log Out after being logged in.
 if(isset($_GET['un']) && $_GET['un'] == '') {
-  $membership->log_User_Out();
+  $Membership->log_User_Out();
 }
 
 // When submit is clicked.
 if($_POST) {
-  $response =  $membership->send_password_to_email($_POST['email']);
+  $response =  $Membership->send_password_to_email($_POST['email']);
 }
 
 ?>

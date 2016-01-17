@@ -1,9 +1,9 @@
 <?php
 
 require_once 'classes/Membership.php';
-$membership = New Membership();
+$Membership = New Membership();
 
-$membership->confirm_Member();
+$Membership->confirm_Member();
 
 ?>
 

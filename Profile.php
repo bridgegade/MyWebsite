@@ -1,5 +1,13 @@
 <?php
 session_start();
+require_once 'classes/Membership.php';
+$Membership = new Membership();
+
+if($_POST){
+  $directory = "userImages/";
+  $fileDirectory = $directory . basename($_FILES["fileToUpload"]["name"]);
+  $Membership->attach_Image($fileDirectory);
+}
 ?>
 <html>
 <head>
@@ -37,7 +45,7 @@ session_start();
       <h1><small>You must log in first.</small></h1>';
     }
     else{
-      echo '<form action= "Upload.php" method = "post" enctype = "multipart/form-data">
+      echo '<form action= "" method = "post" enctype = "multipart/form-data">
       <label for="fileToUpload">Upload Image: &nbsp</label>
       <input type = "file" name = "fileToUpload" id = "fileToUpload">
       <input type = "submit" name = "submit" value = "Upload Image">
