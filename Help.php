@@ -1,13 +1,6 @@
-<?php
-session_start();
-require_once 'classes/Membership.php';
-$Membership = new Membership();
 
-if($_POST){
-  $directory = "userImages/";
-  $fileDirectory = $directory . basename($_FILES["fileToUpload"]["name"]);
-  $Membership->attach_Image($fileDirectory);
-}
+ <?php
+session_start();
 ?>
 <html>
 <head>
@@ -15,6 +8,8 @@ if($_POST){
 <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">  
 <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
 <link href = "css/main.css" rel = "stylesheet">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+<script type = "text/javascript" src = "js/main.js"></script>
 </head>
 
 
@@ -22,6 +17,7 @@ if($_POST){
       <div class="container">
         <ul class="pull-left">
           <li><a href="About.php">About</a></li>
+          <li><a href="Profile.php">Profile</a></li>
           <li><a href="#">Browse</a></li>
         </ul>
         <ul class="pull-right">
@@ -40,20 +36,7 @@ if($_POST){
       </div>
     </div>
 <div id = "main">
-<p> 
-<?php if(!(isset($_SESSION['un']))) { echo '  <ul class="center-block">
-      <h1><small>You must log in first.</small></h1>';
-    }
-    else{
-      echo '<form action= "" method = "post" enctype = "multipart/form-data">
-      <label for="fileToUpload">Upload Image: &nbsp</label>
-      <input type = "file" name = "fileToUpload" id = "fileToUpload">
-      <input type = "submit" name = "submit" value = "Upload Image">
-      </form>';
-    }
-    ?>
-</p>
-
+ <a id ="recover" href = "Recover.php">Forgot Password</a>
 </div>
 <body>
 

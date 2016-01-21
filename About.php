@@ -28,7 +28,7 @@ session_start();
         	}
       ?>
           
-          <li><a href="#">Help</a></li>
+          <li><a href="Help.php">Help</a></li>
         </ul>
       </div>
     </div>

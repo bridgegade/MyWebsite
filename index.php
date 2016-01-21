@@ -30,7 +30,7 @@ $Membership->confirm_Member();
         <ul class="pull-right">
           <li><a href="SignUp.php">Sign Up</a></li>
           <li><a href="Login.php?un=">Log Out</a></li>
-          <li><a href="#">Help</a></li>
+          <li><a href="Help.php">Help</a></li>
         </ul>
       </div>
     </div>

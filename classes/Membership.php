@@ -75,7 +75,7 @@ class Membership {
 	}
 	//check
 	if($uploadCheck ==0){
-		echo "There was a problem uploading your file."
+		echo "There was a problem uploading your file.";
 	}
 	else {
     	if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $fileDirectory)) {

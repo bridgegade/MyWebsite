@@ -27,8 +27,8 @@ if($_POST) {
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </head>
-
 <body>
+
    <div class="nav">
       <div class="container">
         <ul class="pull-left">
@@ -46,12 +46,13 @@ if($_POST) {
           echo  '<li><a href="Login.php">Log In</a></li>';
           }
       ?>
-          <li><a href="#">Help</a></li>
+          <li><a href="Help.php">Help</a></li>
         </ul>
       </div>
     </div>
 <div class="jumbotron">
 <div class="container">
+
 <div id="login">
 	<form method="post" action="">
       <ul class="center-block">
@@ -72,7 +73,7 @@ if($_POST) {
         </botton>
         </ul>
     </form>
-    <p><a href = "Recover.php">Forgot Password</a></p>
+   
 </div>
 </div>
     <?php if(isset($response)) echo "<h4 class='alert'>" . $response . "</h4>"; ?>

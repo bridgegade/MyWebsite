@@ -39,7 +39,7 @@ if($_POST ){
           echo  '<li><a href="Login.php">Log In</a></li>';
           }
       ?>
-          <li><a href="#">Help</a></li>
+          <li><a href="Help.php">Help</a></li>
         </ul>
       </div>
     </div>
@@ -54,7 +54,7 @@ if($_POST ){
       <h1>Sign Up <small>enter a username and password</small></h1>
         <p>
          <p>
-          <label for="email">Email &nbsp </label>
+          <label for="email">Email &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </label>
             <input type="text" name="email" />
         </p>
         <p>

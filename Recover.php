@@ -46,7 +46,7 @@ if($_POST) {
           echo  '<li><a href="Login.php">Log In</a></li>';
           }
       ?>
-          <li><a href="#">Help</a></li>
+          <li><a href="Help.php">Help</a></li>
         </ul>
       </div>
     </div>
@@ -64,7 +64,7 @@ if($_POST) {
         
         </p>
         <botton>
-          <input type="submit" id="submit" value="Login" name="submit" />
+          <input type="submit" id="submit" value="Send password to email" name="submit" />
         </botton>
         </ul>
     </form>
