@@ -85,7 +85,7 @@ if($_POST ){
     </form>
 </div>
 </div>
-    <?php if(isset($response)) echo "<h4 class='alert'>" . $response . "</h4>"; ?>
+    <?php if(isset($response)) echo "<h4 class='alert'>" . $response." " . "</h4>"; ?>
 </div><!--end login-->
 </body>
 </html>
