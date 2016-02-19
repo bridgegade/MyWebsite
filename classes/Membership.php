@@ -1,5 +1,6 @@
 <?php
 require 'Mysql.php';
+
 class Membership {
 	
 	function validate_user($un, $pwd) {
@@ -52,38 +53,42 @@ class Membership {
 			return "This email is not registered.";
 		}
 	}
+	function grab_User_Pictures(){
+		$Mysql = new Mysql();
+		return  $Mysql->get_Pictures();
+	}
 	function attach_Image($fileDirectory){
-	
+	$Mysql = new Mysql();
 	$uploadCheck = 1;
 	$imageFileType = pathinfo($fileDirectory,PATHINFO_EXTENSION);
 	//checks if image
 	if(isset($_POST["submit"])){
 	$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
 		if($check !== false){
-		echo "File is an image - " . $check["mime"] . ".";
+		
 		$uploadCheck = 1; 
 		}
 		else{
-		echo "File is not an image.";
+		return "File is not an image.";
 		$uploadCheck = 0;
 		}
 		//check if image already exisits
 		if(file_exists($fileDirectory)){
-		echo "Sorry, file already exists.";
+		return "Sorry, file already exists.";
 		$uploadCheck = 0;
 		}
 	}
 	//check
 	if($uploadCheck ==0){
-		echo "There was a problem uploading your file.";
+		return "There was a problem uploading your file.";
 	}
 	else {
     	if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $fileDirectory)) {
-    	$Mysql->attach_Image_To_Account($fileDirectory);
-        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+    	$Mysql->attach_Image_To_Account("/userImages/".basename($_FILES["fileToUpload"]["name"]));
+        return "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
     	} 
     	else {
-        echo "Sorry, there was an error uploading your file.";
+        return "Sorry, there was an error uploading your file.";
     	}
 	}
 		

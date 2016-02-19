@@ -16,10 +16,9 @@ if($_POST) {
 ?>
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html >
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>TheGallery</title>
 <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">  
 <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
@@ -27,14 +26,14 @@ if($_POST) {
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body>
 
-   <div class="nav">
+<body>
+    <div class="nav">
       <div class="container">
         <ul class="pull-left">
           <li><a href="About.php">About</a></li>
           <li><a href="Profile.php">Profile</a></li>
-          <li><a href="#">Browse</a></li>
+          <li><a href="Browse.php">Browse</a></li>
         </ul>
         <ul class="pull-right">
           <li><a href="SignUp.php">Sign Up</a></li>
